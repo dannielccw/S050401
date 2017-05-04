@@ -39,4 +39,10 @@ public class MainActivity extends AppCompatActivity {
     {
         manager.cancel(NOTIFICATION_ID);
     }
+
+    public void clickStartService(View v)
+    {
+        Intent it = new Intent(MainActivity.this, MyService.class);
+        startService(it);
+    }
 }
