@@ -33,5 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Notification notification = builder.build();
         manager.notify(NOTIFICATION_ID, notification);
     }
-
+    public void click2(View v)
+    {
+        manager.cancel(NOTIFICATION_ID);
+    }
 }
